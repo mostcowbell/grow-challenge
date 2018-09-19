@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Container, Row, Col, Input } from 'reactstrap'
+import { Container, Row, Col } from 'reactstrap'
 import fetch from 'isomorphic-fetch'
 import List from './List'
 import Details from './Details'
@@ -56,7 +56,7 @@ class RepresentativeFinder extends Component {
 
   render () {
     const { people, selected } = this.state
-    console.log('people', people)
+
     return (
       <Container>
         <Row className='mb-3'>
